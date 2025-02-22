@@ -1,0 +1,34 @@
+main {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.table-container {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.btn-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #007bff; */
+    color: white;
+    border: none;
+}
+
+/* .btn-icon:hover {
+    background-color: #0056b3;
+} */
+
+.btn-icon svg {
+    color: gray;
+}
+
+.btn-icon:hover svg {
+    color: rgb(90, 90, 90);
+}

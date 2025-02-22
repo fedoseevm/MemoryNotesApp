@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Recording Site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/general.css">
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="login.js"></script> -->
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <div id="logo">LOGO</div>
+        </a>
+        <div class="btn-container">
+            <a href="auth/login.html"><button id="login-btn" class="btn btn-primary me-2">Login</button></a>
+            <a href="auth/register.html"><button id="register-btn" class="btn btn-secondary">Registration</button></a>
+            <a><button id="join-class-btn" class="btn btn-primary me-2" style="display: none;">Join class</button></a>
+            <a><button id="create-class-btn" class="btn btn-secondary" style="display: none;">Create class</button></a>
+        </div>
+    </header>
+    <main>
+        <div class="table-container">
+            <table class="table table-bordered">
+                <thead>
+                    <th>Date</th>
+                    <th>Your memories</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>8.01</td>
+                        <td class="text-center">
+                            <button class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                  </svg>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>7.01</td>
+                        <td class="text-center">
+                            <button class="btn-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                    <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"/>
+                                  </svg>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 MemoryNotes app</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Sprawdzenie czy użytkownik jest zalogowany (np. przez localStorage)
+        const isLoggedIn = false;
+    
+        if (isLoggedIn === true) {
+            document.getElementById("login-btn").style.display = "none";
+            document.getElementById("register-btn").style.display = "none";
+            document.getElementById("join-class-btn").style.display = "inline-block";
+            document.getElementById("create-class-btn").style.display = "inline-block";
+        }
+    });
+    </script>
+    
+</html>
