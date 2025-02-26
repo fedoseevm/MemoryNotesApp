@@ -7,6 +7,7 @@ main {
     width: 100%;
     height: 100%;
     overflow-y: auto;
+    display: none;
 }
 
 .btn-icon {
@@ -78,7 +79,4 @@ main {
 .memory-item:hover .tooltip-text {
     visibility: visible;
     opacity: 1;
-}
-.table-container {
-    display: block;
 }
