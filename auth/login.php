@@ -18,12 +18,9 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) 
  {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    //echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
-    //echo "Respect";
-    header("Location: ../index.html");
-  }
+    session_start();
+    $_SESSION["isLoggedIn"] = true;
+    header("Location: ../index.php");
 } else {
   echo '<script>';
 echo 'alert("Podaj poprawny email i hasło");';
