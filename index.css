@@ -37,7 +37,7 @@ main {
 #memory-cell {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Кнопка слева, воспоминания идут вправо */
+    justify-content: flex-start; /* Button on the left, memories go on the right side */
     flex-wrap: wrap;
     gap: 10px;
 }
